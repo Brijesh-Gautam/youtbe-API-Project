@@ -42,7 +42,7 @@ def get_video_stats(youtube,video_ids):
                 Date_of_Publish = response['items'][i]['snippet']['publishedAt'],
                 view = response['items'][i]['statistics']['viewCount'],
                 Likes = response['items'][i]['statistics']['likeCount'],
-                Dislikes = response['items'][i]['statistics']['favoriteCount'])  #cant find dislike section in file so assign (Dislike=favoritecount)
+                Dislikes = response['items'][i]['statistics']['favoriteCount'])
     all_data.append(data)
               
   return all_data
